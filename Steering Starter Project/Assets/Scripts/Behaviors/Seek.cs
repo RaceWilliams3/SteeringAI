@@ -35,6 +35,8 @@ public class Seek : SteeringBehavior
         {
             //result.linear = target.transform.position - character.transform.position;
             result.linear = targetPosition - character.transform.position;
+            //Debug.Log("target Position: " + targetPosition);
+            //Debug.Log("character Position: " + character.transform.position);
         }
 
         // give full acceleration along this direction
