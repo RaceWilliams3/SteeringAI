@@ -5,7 +5,7 @@ using UnityEngine;
 public class Wander : Seek
 {
     public float wanderOffset = 5;
-    public float wanderRadius = 3;
+    public float wanderRadius = 4;
     public Vector3 circleCenter;
     public Vector3 wanderTarget;
 
