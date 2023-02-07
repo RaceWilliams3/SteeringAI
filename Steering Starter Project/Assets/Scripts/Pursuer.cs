@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Pursuer : Kinematic
 {
-    Seek myMoveType;
+    Pursue myMoveType;
+    Evade myEvadeType;
     Face myRotateType;
+
+    public bool isEvading;
 
     // Start is called before the first frame update
     void Start()
     {
-        myMoveType = new Seek();
+        myMoveType = new Pursue();
         myMoveType.character = this;
         myMoveType.target = myTarget;
+
+        myEvadeType = new Evade();
+        myEvadeType.character = this;
+        myEvadeType.target = myTarget;
 
         myRotateType = new Face();
         myRotateType.character = this;
@@ -24,7 +31,14 @@ public class Pursuer : Kinematic
     protected override void Update()
     {
         steeringUpdate = new SteeringOutput();
-        steeringUpdate.linear = myMoveType.getSteering().linear;
+        if (isEvading == true)
+        {
+            steeringUpdate.linear = myEvadeType.getSteering().linear;
+        } 
+        else
+        {
+            steeringUpdate.linear = myMoveType.getSteering().linear;
+        }
         steeringUpdate.angular = myRotateType.getSteering().angular;
         base.Update();
     }
