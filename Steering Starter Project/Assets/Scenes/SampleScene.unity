@@ -582,7 +582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480033054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.54, y: 0, z: -14.38}
+  m_LocalPosition: {x: 1.54, y: 0, z: -6.65}
   m_LocalScale: {x: 0.27522, y: 0.27522, z: 0.27522}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1423,9 +1423,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 2
-  maxAngularVelocity: 45
-  myTarget: {fileID: 1676677346}
+  maxSpeed: 10
+  maxAngularVelocity: 90
+  myTarget: {fileID: 281066794}
   isEvading: 0
 --- !u!65 &1347960534
 BoxCollider:
@@ -1977,9 +1977,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
-  maxSpeed: 2
+  maxSpeed: 5
   maxAngularVelocity: 45
-  myTarget: {fileID: 1347960532}
+  myTarget: {fileID: 1450348192}
   isEvading: 1
 --- !u!65 &1676677348
 BoxCollider:
@@ -2014,7 +2014,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0bb9563ebe67dc5409fb463e0410ac2f, type: 2}
+  - {fileID: 2100000, guid: 4c247647abb52ea479b1364d35cae722, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2397,7 +2397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881178841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.49, y: 0, z: -6.4}
+  m_LocalPosition: {x: -5.49, y: 0, z: 1.3299994}
   m_LocalScale: {x: 0.27522, y: 0.27522, z: 0.27522}
   m_ConstrainProportionsScale: 0
   m_Children: []

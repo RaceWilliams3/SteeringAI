@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pursue : Seek
 {
     // the maximum prediction time
-    float maxPredictionTime = 1f;
+    float maxPredictionTime = 10f;
 
     // overrides the position seek will aim for
     // assume the target will continue travelling in the same direction and speed
@@ -31,8 +31,8 @@ public class Pursue : Seek
         }
 
         // 2. get the current velocity of our target and add an offset based on our prediction time
-        //Kinematic myMovingTarget = target.GetComponent(typeof(Kinematic)) as Kinematic;
-        Kinematic myMovingTarget = target.GetComponent<Kinematic>();
+        Kinematic myMovingTarget = target.GetComponent(typeof(Kinematic)) as Kinematic;
+        //Kinematic myMovingTarget = target.GetComponent<Kinematic>();
         if (myMovingTarget == null)
         {
             // default to seek behavior for non-kinematic targets
